@@ -11,9 +11,13 @@
 # https://drive.google.com/drive/folders/1FpCRKyCTgAuWS9h2O0tWmJZ5erTPYxQ1?usp=sharing
 
 ## main стартовый модуль проекта
-
+ 
 # import <pandas>
 
+  # TODO - переименовато функции
+  
+  from functions import func1, func2
+  
 def main():
   # TODO - сделай вызов функцией из functions
   pass
