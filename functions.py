@@ -1,3 +1,4 @@
+## functions модуль для импорта функций для работы
 import pandas as pd
 import os
 
@@ -6,6 +7,7 @@ def process_row(row):
     s_new = ''.join(filter(str.isdigit, str(s)))
     row['phone_number'] = s_new
     return row
+    
 def process_file():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_dir, 'phone_numbers.xlsx')
