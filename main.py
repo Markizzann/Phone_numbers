@@ -1,4 +1,5 @@
-from function import process_file
+from functions import process_file
 
-# Вызов функции для обработки файла
+# инициализационный скрипт
+if __name__ == "__main__":
 process_file()
