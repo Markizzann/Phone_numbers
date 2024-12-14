@@ -1,7 +1,8 @@
-def process_row(row):
+import pandas as pd
+import os
 
-    """Обрабатывает строку DataFrame, очищая номер телефона от нецифровых символов."""
-  
-def process_file():
-     
-     """Читает данные из файла Excel, обрабатывает номера телефонов и сохраняет очищенные данные в новый файл."""
+def process_row(row):
+    s = row['phone_number']
+    s_new = ''.join(filter(str.isdigit, str(s)))
+    row['phone_number'] = s_new
+    return row
